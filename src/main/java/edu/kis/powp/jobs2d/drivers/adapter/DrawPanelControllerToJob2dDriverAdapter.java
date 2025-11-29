@@ -28,6 +28,7 @@ public class DrawPanelControllerToJob2dDriverAdapter extends DrawerFeature imple
 		line.setEndCoordinates(x, y);
 
 		getDrawerController().drawLine(line);
+		setPosition(x, y);
 	}
 
 	@Override
