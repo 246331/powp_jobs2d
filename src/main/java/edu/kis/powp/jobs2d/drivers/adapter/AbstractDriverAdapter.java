@@ -12,6 +12,7 @@ public class AbstractDriverAdapter extends AbstractDriver {
     }
 
     public void operateTo(int x, int y) {
+        driver.setPosition(getX(), getY());
         driver.operateTo(x, y);
         setPosition(x, y);
     }
